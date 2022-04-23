@@ -1,0 +1,528 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 25px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .mos img
+    {
+        width: 78px;
+    }
+
+
+    header .logo img
+    {
+        width: 85px;
+    }
+
+
+    header .logo2
+    {
+        padding: 14px 12px 30px;
+    }
+
+    header .logo2 img
+    {
+        width: 40px;
+    }
+
+
+
+    /*------------------------
+		Slider controls
+	------------------------*/
+    .slider-pagination
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*----------------
+		Typography
+	----------------*/
+    .text_block.small
+    {
+        font-size: 14px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 20px;
+    }
+
+    .text_block * + h2
+    {
+        margin-top: 32px;
+    }
+
+
+    .text_block h3
+    {
+        font-size: 18px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .text_block img
+    {
+        border-radius: 4px;
+    }
+
+    .text_block img.left
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .text_block img.right
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .text_block p,
+    .text_block ul,
+    .text_block img
+    {
+        margin-bottom: 20px;
+    }
+
+    .text_block.small p,
+    .text_block.small ul,
+    .text_block.small img
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block ul li
+    {
+        padding-left: 23px;
+    }
+
+    .text_block ul li:before
+    {
+        left: 0;
+    }
+
+    .text_block .cols .col + .col
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*-----------------
+		Main section
+	-----------------*/
+    .main_section .sector
+    {
+        padding: 80px 0 42px;
+    }
+
+
+    .main_section .title
+    {
+        font-size: 28px;
+    }
+
+    .main_section .title:before
+    {
+        top: calc(100% - 19px);
+        left: -2px;
+
+        width: calc(100% + 2px);
+    }
+
+
+    .main_section .info
+    {
+        font-size: 19px;
+
+        max-width: 260px;
+        margin-top: 20px;
+    }
+
+
+    .main_slider
+    {
+        margin-top: 12px;
+    }
+
+    .main_slider .name
+    {
+        font-size: 43px;
+
+        max-width: 260px;
+    }
+
+
+    .main_slider .col_l
+    {
+        margin-top: 24px;
+    }
+
+
+    .main_slider .page_link
+    {
+        font-size: 10px;
+
+        width: calc(50% - 9px);
+    }
+
+    .main_slider .page_link .link_bord
+    {
+        line-height: 23px;
+    }
+
+    .page_link .link_text
+    {
+        padding-right: 24px;
+    }
+
+    .page_link.reverse .link_text
+    {
+        padding-right: 0;
+        padding-left: 24px;
+    }
+
+    .main_slider .page_link .link_bord
+    {
+        padding: 0 10px;
+    }
+
+    .main_slider .page_link .link_text svg
+    {
+        width: 18px;
+        height: 8px;
+        margin-top: -4px;
+    }
+
+
+    .main_slider .desc
+    {
+        font-size: 13px;
+        line-height: 1.5;
+
+        text-align: left;
+    }
+
+    .main_slider .desc div + div
+    {
+        margin-top: 10px;
+    }
+
+
+
+    .wrap_link
+    {
+        margin-top: 24px;
+    }
+
+    .page_link
+    {
+        font-size: 14px;
+    }
+
+    .page_link .link_bord
+    {
+        line-height: 32px;
+
+        padding: 0 16px;
+    }
+
+    .page_link.vertical .link_text svg
+    {
+        width: 9px;
+        height: 14px;
+        margin-top: -7px;
+    }
+
+    .page_link.vertical .link_text
+    {
+        padding-right: 18px;
+    }
+
+
+
+    /*------------
+		Information
+	------------*/
+    .information .title
+    {
+        font-size: 25px;
+    }
+
+
+    .information .text_block
+    {
+        margin-top: 24px;
+    }
+
+
+    .information .box
+    {
+        margin-top: 24px;
+    }
+
+
+    .information .box_title
+    {
+        font-size: 18px;
+    }
+
+
+    .information .list
+    {
+        font-size: 14px;
+    }
+
+    .information .list li + li
+    {
+        margin-top: 6px;
+    }
+
+    .information .list li
+    {
+        padding-left: 30px;
+    }
+
+    .information .list li:before
+    {
+        top: -2px;
+
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .information .notice
+    {
+        font-size: 14px;
+
+        margin: 20px 0 0 10px;
+        padding: 16px 16px 16px 24px;
+
+        border-radius: 4px;
+    }
+
+    .information .exp
+    {
+        font-size: 12px;
+
+        margin: 10px 0 0 34px;
+    }
+
+
+
+    /*------------
+		Advantages
+	------------*/
+    .advantages .items
+    {
+        margin-left: -20px;
+    }
+
+    .advantages .item
+    {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+    }
+
+    .advantages .item .info
+    {
+        font-size: 12px;
+
+        margin-bottom: 4px;
+    }
+
+    .advantages .item .number
+    {
+        font-size: 60px;
+    }
+
+    .advantages .item .desc
+    {
+        font-size: 12px;
+
+        margin-top: 10px;
+    }
+
+
+
+    /*------------
+		Kinds sports
+	------------*/
+    .kinds_sports .title
+    {
+        font-size: 60px;
+    }
+
+    .modal_info
+    {
+        left: 10px;
+
+        width: calc(100% - 20px);
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .kinds_sports .item:nth-child(3n) .modal_info
+    {
+        right: auto;
+        left: 10px;
+    }
+
+    .modal_info .modal_info_title
+    {
+        font-size: 18px;
+
+        padding-left: 20px;
+    }
+
+    .modal_info .modal_info_title:before
+    {
+        top: 9px;
+
+        width: 8px;
+        height: 8px;
+    }
+
+
+
+    /*------------
+		Section info
+	------------*/
+    .section_info .text_block h2
+    {
+        padding-left: 50px;
+    }
+
+    .section_info .text_block h2 span
+    {
+        top: -8px;
+
+        width: 42px;
+        height: 36px;
+    }
+
+    .section_info .wrap_link
+    {
+        margin-top: 24px;
+
+        text-align: center;
+    }
+
+
+
+    /*------------
+		FAQ
+	------------*/
+    .accordion
+    {
+        margin-top: 24px;
+    }
+
+    .accordion .item
+    {
+        border-radius: 4px;
+    }
+
+    .accordion .title
+    {
+        font-size: 14px;
+
+        padding-right: 42px;
+
+        border-radius: 4px;
+    }
+
+    .accordion .title:before
+    {
+        right: 16px;
+    }
+
+
+    .accordion .data
+    {
+        padding-right: 16px;
+    }
+
+
+
+    /*------------
+		Footer
+	------------*/
+    footer
+    {
+        margin-top: 40px;
+    }
+
+
+    footer .top
+    {
+        padding: 25px 0;
+    }
+
+    footer .feedback .title
+    {
+        font-size: 20px;
+
+        min-height: 46px;
+        padding-left: 60px;
+    }
+
+    footer .feedback .title:before
+    {
+        width: 54px;
+        height: 46px;
+    }
+
+
+    footer .feedback .desc
+    {
+        font-size: 14px;
+    }
+
+    footer .feedback .mail
+    {
+        font-size: 16px;
+    }
+
+
+    footer .info
+    {
+        padding: 0 0 20px;
+    }
+
+    footer .links
+    {
+        margin-left: -20px;
+    }
+
+    footer .links .item
+    {
+        width: calc(100%/3 - 20px);
+        margin: 20px 0 0 20px;
+    }
+
+
+    footer .policy
+    {
+        font-size: 11px;
+    }
+}

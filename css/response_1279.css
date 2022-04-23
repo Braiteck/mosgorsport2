@@ -1,0 +1,198 @@
+@media print, (max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 50px;
+    }
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .mos
+    {
+        padding-top: 28px;
+    }
+
+
+    header .logo
+    {
+        padding-top: 22px;
+    }
+
+
+    header .logo2
+    {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    header .logo2:before
+    {
+        height: calc(100% + 136px);
+    }
+
+
+
+    /*-----------------
+		Main section
+	-----------------*/
+    .main_section .sector
+    {
+        padding-bottom: 50px;
+    }
+
+
+    .main_section .block_abs
+    {
+        top: 114px;
+        left: 20px;
+
+        margin-left: 0;
+    }
+
+    .main_section .info
+    {
+        font-size: 26px;
+
+        margin-top: 30px;
+    }
+
+
+    .main_slider .box_img
+    {
+        width: calc(100% - 420px);
+        max-width: 700px;
+        padding-left: 30px;
+    }
+
+    .main_slider .name
+    {
+        font-size: 80px;
+
+        max-width: 480px;
+    }
+
+
+    .main_slider .col_l
+    {
+        width: 410px;
+        padding-bottom: 0;
+    }
+
+    .main_slider .page_link + .page_link
+    {
+        margin-top: 12px;
+    }
+
+    .main_slider .desc
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*------------
+		Information
+	------------*/
+    .information .col_l
+    {
+        width: 414px;
+    }
+
+    .information .title
+    {
+        font-size: 50px;
+    }
+
+    .information .col_r
+    {
+        width: 394px;
+    }
+
+    .information .img_abs
+    {
+        width: 400px;
+        margin-left: -200px;
+    }
+
+    .information .link_abs
+    {
+        top: 470px;
+    }
+
+
+
+    /*------------
+		Kinds sports
+	------------*/
+    .kinds_sports .items
+    {
+        margin-top: 140px;
+    }
+
+
+
+    /*------------
+		FAQ
+	------------*/
+    .faq .img_bs
+    {
+        width: 490px;
+    }
+
+
+    .accordion .title
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*------------
+		Footer
+	------------*/
+    footer .feedback .title
+    {
+        font-size: 26px;
+
+        min-height: 58px;
+        padding-left: 80px;
+    }
+
+    footer .feedback .title:before
+    {
+        width: 70px;
+        height: 58px;
+    }
+
+
+    footer .feedback .desc
+    {
+        font-size: 17px;
+
+        width: 310px;
+        margin-left: auto;
+    }
+
+
+    footer .feedback .mail
+    {
+        font-size: 17px;
+    }
+
+
+    footer .copy
+    {
+        width: 460px;
+    }
+}
