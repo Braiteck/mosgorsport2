@@ -1,4 +1,5 @@
-@media print, (max-width: 767px)
+@media print,
+(max-width: 767px)
 {
     /*-------------------
         Global styles
@@ -120,31 +121,32 @@
 
     .main_slider .name
     {
+        font-size: 56px;
+
         right: 0;
         left: auto;
-
-        font-size: 56px;
 
         max-width: 350px;
     }
 
     .main_slider .col_l
     {
-        order: 2;
-
         width: 100%;
         margin-top: 30px;
+
+        order: 2;
     }
 
     .main_slider .btns
     {
         display: flex;
+
+        width: 100%;
+
         justify-content: center;
         align-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
-
-        width: 100%;
     }
 
 
@@ -167,9 +169,9 @@
 
     .main_slider .page_link.reverse
     {
-        order: -1;
-
         margin-right: 18px;
+
+        order: -1;
     }
 
     .main_slider .desc
@@ -252,8 +254,6 @@
 
     .advantages .item
     {
-        flex-grow: 1;
-
         width: calc(100%/2 - 30px);
         min-width: 1px;
         max-width: none;
@@ -261,6 +261,8 @@
         padding-top: 0;
 
         text-align: center;
+
+        flex-grow: 1;
     }
 
     .advantages .item .info

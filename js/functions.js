@@ -16,7 +16,7 @@ $(() => {
 
 
 	// Аккордион
-	$('body').on('click', '.accordion .title', function(e) {
+	$('body').on('click', '.accordion .title', function (e) {
 		e.preventDefault()
 
 		let parent = $(this).closest('.accordion')
@@ -34,22 +34,60 @@ $(() => {
 	})
 
 
-	$('body').on('mouseenter', '.kinds_sports .list_item .name', function(e) {
-		$(this).closest('.items').find('.modal_info').removeClass('show')
+	$('body').on('click', '.kinds_sports .list_item .name', function (e) {
+		e.preventDefault()
 
-		$(this).next().addClass('show')
+		if ($(this).parent().hasClass('active')) {
+			$(this).parent().removeClass('active')
 
-		$('body').addClass('modal_open')
+			$(this).closest('.items').find('.modal_info').removeClass('show')
 
-		$('.overlay').addClass('show')
+			$(this).next().removeClass('show')
+
+			$('body').removeClass('modal_open')
+
+			$('.overlay').removeClass('show')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		} else {
+			$(this).parent().addClass('active')
+			$(this).closest('.items').find('.modal_info').removeClass('show')
+
+			$(this).next().addClass('show')
+
+			$('body').addClass('modal_open')
+
+			$('.overlay').addClass('show')
+
+			if (is_touch_device()) $('body').css('cursor', 'pointer')
+		}
 	})
 
-	$('body').on('click', '.modal_info .close_modal, .overlay', function(e) {
+	$('body').on('click', '.modal_info .close_modal', function (e) {
+		e.preventDefault()
+
+		$('.list_item').removeClass('active')
+
 		$('.modal_info').removeClass('show')
 
 		$('body').removeClass('modal_open')
 
 		$('.overlay').removeClass('show')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
+	// Закрываем всплывашку при клике за её пределами
+	$(document).click((e) => {
+		if ($(e.target).closest('.list_item.active').length === 0) {
+			console.log($(e.target))
+			$('.modal_info').removeClass('show')
+			$('.list_item').removeClass('active')
+			$('body').removeClass('modal_open')
+			$('.overlay').removeClass('show')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
 	})
 })
 
